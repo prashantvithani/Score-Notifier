@@ -11,10 +11,10 @@ def fetch_data
 	data.each do |i|
 		if i.to_s.include?("India")
 			@match = i.text
+			break
 		else
 			@match = "No India match today"
 		end
-		# puts i.to_s
 	end
 end
 
